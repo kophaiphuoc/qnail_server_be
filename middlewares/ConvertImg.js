@@ -2,11 +2,10 @@ const multer = require('multer');
 const path = require('path');
 
 const ConvertImmg = (req, res, next) => {
-  console.log(req.body)
   //Khởi tạo middleware upload file
   const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-      cb(null, 'uploads/')
+      cb(null, '')
     },
     filename: function (req, file, cb) {
       cb(null, file.originalname)

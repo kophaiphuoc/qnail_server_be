@@ -5,7 +5,7 @@ const ConvertPopup = (req, res, next) => {
   //Khởi tạo middleware upload file
   const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-      cb(null, 'uploads/')
+      cb(null, '')
     },
     filename: function (req, file, cb) {
       cb(null, file.originalname)
@@ -26,7 +26,6 @@ const ConvertPopup = (req, res, next) => {
     const { title } = req.body;
     const { path } = req.file;
 
-    console.log(path)
     req.img = {
         image:path,
         title:title

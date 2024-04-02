@@ -1,0 +1,14 @@
+# Bỏ qua các tệp tin và thư mục tạm thời
+.DS_Store
+Thumbs.db
+
+# Bỏ qua các tệp tin log
+*.log
+
+# Bỏ qua thư mục node_modules trong dự án Node.js
+node_modules/
+
+# Bỏ qua các tệp tin được tạo bởi IDE hoặc trình biên dịch cụ thể
+/build/
+/dist/
+/venv/

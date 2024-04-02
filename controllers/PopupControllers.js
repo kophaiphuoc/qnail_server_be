@@ -4,6 +4,7 @@ const PopupController = {
     addPopupList: async (req, res) => {
         try {
             const imgPopup = req.img
+            console.log(imgPopup)
             const UploadPopup = await PopupService.addPopupService(imgPopup)
             if (UploadPopup == 2) {
                 res.status(500).json({
